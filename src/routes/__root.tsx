@@ -84,14 +84,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "Más de 400 sesiones, juegos y dinámicas de jiu-jitsu infantil listas para aplicar. Planifica meses de clases en minutos. Desde $5. Acceso de por vida.",
       },
       { name: "author", content: "+400 Entrenamientos JJ" },
-      { property: "og:title", content: "+400 Sesiones de Jiu-Jitsu Infantil Listas para Aplicar" },
+      { property: "og:title", content: "+400 Sesiones de Entrenamiento de Jiu-Jitsu Infantil" },
       {
         property: "og:description",
         content:
-          "Deja de improvisar la clase. Más de 400 entrenamientos organizados por edad y objetivo. Desde $5. Acceso de por vida.",
+          "Más de 400 sesiones, juegos y dinámicas de jiu-jitsu infantil listas para aplicar. Planifica meses de clases en minutos. Desde $5. Acceso de por vida.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "+400 Sesiones de Entrenamiento de Jiu-Jitsu Infantil" },
+      { name: "twitter:description", content: "Más de 400 sesiones, juegos y dinámicas de jiu-jitsu infantil listas para aplicar. Planifica meses de clases en minutos. Desde $5. Acceso de por vida." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/c830d69b-5560-410c-a8d7-0a2df8cf21da/id-preview-e697000d--906390a1-d2b8-4777-8b43-2097392ad613.lovable.app-1784492821888.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/c830d69b-5560-410c-a8d7-0a2df8cf21da/id-preview-e697000d--906390a1-d2b8-4777-8b43-2097392ad613.lovable.app-1784492821888.png" },
     ],
     links: [
       {
