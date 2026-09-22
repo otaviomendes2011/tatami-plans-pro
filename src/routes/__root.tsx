@@ -94,6 +94,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "+300 Sesiones de Pádel Listas para Aplicar" },
+      {
+        name: "twitter:description",
+        content:
+          "Una biblioteca completa para planificar entrenamientos de pádel con técnica, táctica, físico y situaciones reales de juego.",
+      },
     ],
     links: [
       {
