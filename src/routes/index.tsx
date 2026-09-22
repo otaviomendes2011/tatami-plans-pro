@@ -139,8 +139,8 @@ function Hero() {
             <img
               src={heroPadel}
               alt="Biblioteca completa de sesiones de entrenamiento de pádel en formato digital"
-              width={1448}
-              height={1086}
+              width={1440}
+              height={1080}
               fetchPriority="high"
               decoding="async"
               className="h-auto w-full"
@@ -176,43 +176,43 @@ const SESSIONS = [
     category: "Sesión 024 · Iniciación",
     title: "Control y profundidad desde el fondo",
     image: session024,
-    width: 960,
-    height: 640,
+    width: 800,
+    height: 533,
   },
   {
     category: "Sesión 087 · Intermedio",
     title: "Defensa de pared y recuperación",
     image: session087,
-    width: 960,
-    height: 640,
+    width: 800,
+    height: 533,
   },
   {
     category: "Sesión 146 · Intermedio",
     title: "Transición desde el fondo hasta la red",
     image: session146,
-    width: 960,
-    height: 640,
+    width: 800,
+    height: 533,
   },
   {
     category: "Sesión 219 · Avanzado",
     title: "Bandeja y recuperación de la posición",
     image: session219,
-    width: 960,
-    height: 640,
+    width: 800,
+    height: 533,
   },
   {
     category: "Sesión 271 · Avanzado",
     title: "Construcción inteligente del punto en pareja",
     image: session271,
-    width: 960,
-    height: 640,
+    width: 800,
+    height: 533,
   },
   {
     category: "Sesión 308 · Todos los niveles",
     title: "Agilidad, reacción y coordinación en pista",
     image: session308,
-    width: 960,
-    height: 640,
+    width: 800,
+    height: 533,
   },
 ];
 
@@ -418,8 +418,8 @@ function Bonuses() {
                   loading="lazy"
                   decoding="async"
                   fetchPriority="low"
-                  width={960}
-                  height={960}
+                  width={720}
+                  height={720}
                   style={{ objectPosition: bonus.position }}
                   className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
                 />
