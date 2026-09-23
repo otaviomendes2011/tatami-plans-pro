@@ -126,7 +126,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     ],
     scripts: [
       {
-        children: `window.pixelId = "6aa94ff3dc302560b177c7a2";
+        children: `window.pixelId = "6ab40bcfc8f08dff12c905df";
 var a = document.createElement("script");
 a.setAttribute("async", "");
 a.setAttribute("defer", "");
