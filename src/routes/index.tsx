@@ -29,6 +29,9 @@ import session146 from "@/assets/padel-session-146-net-transition-v1.webp";
 import session219 from "@/assets/padel-session-219-bandeja-v1.webp";
 import session271 from "@/assets/padel-session-271-point-building-v1.webp";
 import session308 from "@/assets/padel-session-308-agility-v1.webp";
+import testimonialJavier from "@/assets/testimonial-carlos-mendoza-v1.webp";
+import testimonialAndres from "@/assets/testimonial-andres-gonzalez-v1.webp";
+import testimonialMarcos from "@/assets/testimonial-sebastian-torres-v1.webp";
 
 export const Route = createFileRoute("/")({
   component: LandingPage,
@@ -597,6 +600,7 @@ const LATAM_TESTIMONIALS = [
   {
     name: "Javier M.",
     role: "Entrenador de pádel · Madrid",
+    photo: testimonialJavier,
     quote:
       "Le eché un vistazo y encontré varias ideas muy buenas. Está todo muy bien organizado y ahora llego a cada clase con un plan claro.",
     result: "Clases más completas desde la primera semana",
@@ -604,6 +608,7 @@ const LATAM_TESTIMONIALS = [
   {
     name: "Lucía R.",
     role: "Monitora de pádel · Valencia",
+    photo: null,
     quote:
       "Me ahorra muchísimo tiempo de preparación. Puedo elegir una sesión, adaptarla al nivel del grupo y empezar a trabajar sin improvisar.",
     result: "Menos tiempo preparando, más tiempo entrenando",
@@ -611,6 +616,7 @@ const LATAM_TESTIMONIALS = [
   {
     name: "Andrés C.",
     role: "Director de escuela · Sevilla",
+    photo: testimonialAndres,
     quote:
       "Muy buen material. Las progresiones y las variantes para uno, dos, tres o cuatro jugadores nos ayudaron a ordenar toda la escuela.",
     result: "Una misma metodología para todos los grupos",
@@ -618,6 +624,7 @@ const LATAM_TESTIMONIALS = [
   {
     name: "Marcos T.",
     role: "Entrenador de pádel · Buenos Aires",
+    photo: testimonialMarcos,
     quote:
       "La biblioteca está lista para usar y se nota que fue pensada por entrenadores. Mis alumnos perciben mucho más ritmo y propósito en cada sesión.",
     result: "Más ritmo, confianza y evolución en pista",
@@ -653,12 +660,25 @@ function SocialProof() {
                   >
                     <div className="flex items-start justify-between gap-4">
                       <div className="flex items-center gap-3">
-                        <div
-                          aria-hidden="true"
-                          className="grid h-11 w-11 shrink-0 place-items-center rounded-full bg-primary text-sm font-black text-primary-foreground"
-                        >
-                          {testimonial.name.slice(0, 1)}
-                        </div>
+                        {testimonial.photo ? (
+                          <img
+                            src={testimonial.photo}
+                            alt=""
+                            aria-hidden="true"
+                            width={88}
+                            height={88}
+                            loading="lazy"
+                            decoding="async"
+                            className="h-11 w-11 shrink-0 rounded-full object-cover"
+                          />
+                        ) : (
+                          <div
+                            aria-hidden="true"
+                            className="grid h-11 w-11 shrink-0 place-items-center rounded-full bg-primary text-sm font-black text-primary-foreground"
+                          >
+                            {testimonial.name.slice(0, 1)}
+                          </div>
+                        )}
                         <div>
                           <h3 className="text-sm font-black text-foreground">{testimonial.name}</h3>
                           <p className="mt-0.5 text-[11px] leading-tight text-muted-foreground">
